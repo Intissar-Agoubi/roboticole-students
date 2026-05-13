@@ -6,7 +6,7 @@ public class DeleteStudentUseCase {
     public DeleteStudentUseCase(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
-    void execute(String id ){
+    public void execute(String id){
         studentRepository.deleteStudent(id);
     }
 }
