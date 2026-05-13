@@ -1,14 +1,15 @@
 package org.roboticole.domain;
 
 import java.util.AbstractList;
+import java.util.ArrayList;
 
-public class GetAllStudents {
+public class GetAllStudentsUsecase {
     private StudentRepository studentRepository ;
 
-    public GetAllStudents(StudentRepository studentRepository) {
+    public GetAllStudentsUsecase(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
-    AbstractList<StudentModel> execute (){
+    public ArrayList<StudentModel> execute(){
         return studentRepository.getAllStudent();
     }
 }
